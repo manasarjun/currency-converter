@@ -1,8 +1,16 @@
-.countryOptions {
-  width: '100%';
-  height: '100%';
+.input{
 }
 
 .autoComplete {
-width: 400px;
+ width: 400px;
+}
+ 
+.MuiAutocomplete-option {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 12px 0;
+}
+
+.MuiAutocomplete-option > *{
+  width: 100%;
 }

@@ -3,10 +3,11 @@ import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import parse from 'autosuggest-highlight/parse';
 import match from 'autosuggest-highlight/match';
+
 import fetchData from '../../fetchData';
 import CountryInfo from "../CountryInfo/CountryInfo";
-import './SelectCountry.css';
 
+import './SelectCountry.css';
 
 class SelectCountry extends Component {
 
@@ -21,20 +22,14 @@ class SelectCountry extends Component {
       .then((res) => this.setState(() => ({ countries: res })))
   }
 
-
   renderOption = (option, { inputValue }) => {
     const matches = match(option.name, inputValue);
     const parts = parse(option.name, matches);
 
     return (
-      <div
-        className='countryOptions'
-        onClick={this.handleOnclick(option.name)}
-      >
+      <div onClick={this.handleOnclick(option.name)} >
         {parts.map((part, index) => (
-          <span
-            key={index}
-          >
+          <span key={index}>
             {part.text}
           </span>
         ))}
@@ -44,8 +39,8 @@ class SelectCountry extends Component {
 
   handleOnclick = (value) => () => {
     if (value) {
-      const info = this.state.countries.filter((country) => country.name === value);
-      this.setState({ countryInfo: info[0] })
+      const countryDetails = this.state.countries.filter((country) => country.name === value);
+      this.setState({ countryInfo: countryDetails[0] })
     }
   }
 
