@@ -1,15 +1,23 @@
-.container{
-
-  
-  
+.container > .MuiPaper-root{
+  margin-top: 10px;
+  padding: 10px;
 }
 
-h5 {
+.container:last-child {
+  display: inline;
 }
 
-.acceptedCurrency > ul {
+.acceptedCurrency {
   display: flex;
 }
-.acceptedCurrency ul > li{
+
+.acceptedCurrency p{
+  margin: 0;
+}
+.acceptedCurrency ul{
+  padding-left: 12px;
+  margin: 0;
+}
+.acceptedCurrency li{
  list-style: none;
 }

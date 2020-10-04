@@ -1,3 +1,7 @@
+.converterContainer {
+  width: 40%;
+}
+
 .converterContainer > .MuiPaper-root {
   text-align: center;
   padding-bottom: 15px;
@@ -14,4 +18,13 @@
 
 .converterItems > input{
   margin: 0 15px;
+}
+
+@media screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 800px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .converterContainer {
+      width: 100%;
+  }
 }
