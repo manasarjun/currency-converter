@@ -40,6 +40,12 @@ function CountryInfo({ country }) {
 }
 
 CountryInfo.propTypes = {
+  country: PropTypes.shape({
+    name: PropTypes.string,
+    capital: PropTypes.string,
+    population: PropTypes.number,
+    currencies: PropTypes.array
+  })
 
 }
 

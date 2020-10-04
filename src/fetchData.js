@@ -1,5 +1,4 @@
 const BASE_CURRENCY = 'SEK';
-const BASE_COUNTRY = 'SE';
 
 function fetchData(param) {
 

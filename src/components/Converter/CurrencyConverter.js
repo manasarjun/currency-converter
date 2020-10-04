@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 
@@ -11,6 +12,13 @@ class CurrencyConverter extends Component {
     super(props);
     this.refAmount = React.createRef();
     this.forexRef = React.createRef();
+  }
+
+  static propTypes = {
+    country: PropTypes.shape({
+      name: PropTypes.string,
+      currencies: PropTypes.array
+    })
   }
 
   state = {
