@@ -1,0 +1,15 @@
+.container{
+
+  
+  
+}
+
+h5 {
+}
+
+.acceptedCurrency > ul {
+  display: flex;
+}
+.acceptedCurrency ul > li{
+ list-style: none;
+}
