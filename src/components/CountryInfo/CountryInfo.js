@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import CurrencyConverter from '../Converter/CurrencyConverter';
+
 import './CountryInfo.css'
 
 function CountryInfo({ country }) {
@@ -26,6 +28,8 @@ function CountryInfo({ country }) {
         <p>Population: {population}</p>
         <p>Accepted Currency: </p>{currencyName}
       </div>
+      <CurrencyConverter country={country}></CurrencyConverter>
+
     </>
   )
 
