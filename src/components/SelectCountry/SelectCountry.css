@@ -5,6 +5,7 @@
  width: 400px;
 }
  
+/* override material-UI CSS to fix option select */
 .MuiAutocomplete-option {
   padding-top: 0 !important;
   padding-bottom: 0 !important;

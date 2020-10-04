@@ -67,14 +67,17 @@ class CurrencyConverter extends Component {
     )
 
     return (
-      <Paper elevation={3} >
-        <h5 className='text'>Convert SEK to local currency</h5>
-        {showAcceptedCurrency}
-        <input type="number" ref={this.refAmount} defaultValue={1}
-        />
-        <Button variant="outlined" color="primary" onClick={this.handleConversion}>CONVERT</Button>
-        {this.state.total && <h4>Converted amount {this.state.total}</h4>}
-      </Paper>
+      <div className="converterContainer">
+        <Paper elevation={3} >
+          <h4>Convert SEK to local currency</h4>
+          <div className="converterItems">
+            {showAcceptedCurrency}
+            <input type="number" ref={this.refAmount} defaultValue={1} />
+            <Button variant="outlined" color="primary" onClick={this.handleConversion}>CONVERT</Button>
+          </div>
+          {this.state.total && <h4>Converted amount {this.state.total}</h4>}
+        </Paper>
+      </div>
     )
   }
 }

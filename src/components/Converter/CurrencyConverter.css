@@ -1,15 +1,17 @@
-.convertBtn {
-  background-color: #1070ff;
-
+.converterContainer > .MuiPaper-root {
+  text-align: center;
+  padding-bottom: 15px;
 }
 
-.main {
-  align: center;
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
+.converterContainer h4 {
+  display: inline-flex;
 }
-.text{
-  margin-left: 0%;
+
+.converterItems {
+  display: flex;
+  justify-content: center;
+}
+
+.converterItems > input{
+  margin: 0 15px;
 }
