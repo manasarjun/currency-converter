@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CurrencyConverter /> renders correctly 1`] = `
+<div
+  className="converterContainer"
+>
+  <div
+    className="MuiPaper-root MuiPaper-elevation3 MuiPaper-rounded"
+  >
+    <p>
+      Convert 
+      <b>
+        SEK
+      </b>
+       to selected currency
+    </p>
+    <div
+      className="converterItems"
+    >
+      <select>
+        <option
+          vlaue="AFN"
+        >
+          AFN
+        </option>
+      </select>
+      <input
+        defaultValue={1}
+        type="number"
+      />
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          CONVERT
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
