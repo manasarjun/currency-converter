@@ -7,29 +7,7 @@ import CurrencyConverter from '../CurrencyConverter'
 Enzyme.configure({ adapter: new Adapter() });
 
 describe.only('<CurrencyConverter />', () => {
-  /****** API DATA sample 
-  {
-    "currencies": [
-        {
-            "code": "AFN",
-            "name": "Afghan afghani",
-            "symbol": "؋"
-        }
-    ],
-    "languages": [
-        {
-            "iso639_1": "ps",
-            "iso639_2": "pus",
-            "name": "Pashto",
-            "nativeName": "پښتو"
-        }
-    ],
-    "flag": "https://restcountries.eu/data/afg.svg",
-    "name": "Afghanistan",
-    "capital": "Kabul",
-    "population": 27657145
-}
-*******/
+
   const baseProps = {
     country: {
       currencies: [

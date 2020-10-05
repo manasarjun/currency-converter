@@ -6,7 +6,6 @@ import match from 'autosuggest-highlight/match';
 
 import fetchData from '../../fetchData';
 import CountryInfo from "../CountryInfo/CountryInfo";
-
 import './SelectCountry.css';
 
 class SelectCountry extends Component {

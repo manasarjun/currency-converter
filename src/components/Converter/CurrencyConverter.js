@@ -90,9 +90,4 @@ class CurrencyConverter extends Component {
   }
 }
 
-CurrencyConverter.propTypes = {
-
-}
-
 export default CurrencyConverter
-

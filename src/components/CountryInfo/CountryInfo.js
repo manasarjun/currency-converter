@@ -2,9 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Paper from '@material-ui/core/Paper';
 
-
 import CurrencyConverter from '../Converter/CurrencyConverter';
-
 import './CountryInfo.css'
 
 function CountryInfo({ country }) {
@@ -18,7 +16,6 @@ function CountryInfo({ country }) {
         <br />
       </span>
     ));
-
 
   const { name, capital, population } = country;
   return (
@@ -36,8 +33,7 @@ function CountryInfo({ country }) {
       <CurrencyConverter country={country}></CurrencyConverter>
     </>
   )
-
-}
+};
 
 CountryInfo.propTypes = {
   country: PropTypes.shape({
@@ -46,8 +42,6 @@ CountryInfo.propTypes = {
     population: PropTypes.number,
     currencies: PropTypes.array
   })
-
 }
 
 export default CountryInfo
-
